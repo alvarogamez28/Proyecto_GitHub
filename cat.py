@@ -14,7 +14,10 @@ while line:
   if line.isupper():
    fe.write(line + '\n')
   if line.isnumeric():
-   print("Número: " + str(line))
+   print("El numero es: " + str(line))
+  else:
+   print("Caracter no numerico.")#Con esto te dice que los otros campos que hay no contienen 	numeros.
   line = fh.readline().strip()
 fh.close()
 fe.close()
+print("Los que no se admiten como numero se han guardado en la carpeta upper")
